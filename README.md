@@ -67,7 +67,6 @@ Providing the capability to debug at any level of data flow from reading, transf
 	        ├── api
 	        │   ├── LoaderHelper.scala
 	        │   ├── ModellerHelper.scala
-	        │   └── ModelProcessor12.scala
 	        │
 	        ├── io
 	        │   ├── ioSchema
@@ -90,6 +89,10 @@ Providing the capability to debug at any level of data flow from reading, transf
 	        │   ├── SampleModeller1.scala
 	        │   └── SampleModeller2.scala
 	        │
+		├── functionalModel
+	        │   └── functionalModellerl2.scala
+		|
+		|
 	        └── visualiser
 	            └── preVisualiserProcessor.scala
 
@@ -97,8 +100,23 @@ Providing the capability to debug at any level of data flow from reading, transf
 
 #### a. io - Input/Output
 
-##### a.1 Loader
-Loader in PROMPT reads data in SPARK Data Structres like RDD or Datasets, now it can behave diffrentls in case of varinput data but the output of loader should be bounded with some *case class* structure.
+**ioSchema** in **PROMPT** consists of multiple *case classs* that will define and bound with input and output data.
+
+**Loader** in **PROMPT** reads data in SPARK Data Structres like RDD or Datasets, now it can behave diffrentls in case of varied kind of input data but the output of loader should be bounded with some *case class* structure.
+
+**Writer** in **PROMPT** writes data from SPARK Data Structres like RDD or Datasets, that is already bounded with **ioSchema** *case classes*.
+
+#### b. api
+
+**LoaderHelper** is the object where helper methods will reside to load data through loader perfectly and smoothly.
+
+**ModellerHelper** is the object where helper methods will reside to model data according to the needs of either models or modelProcessors.
+
+#### c. modeller
+
+Is the object where all the transformation would be present aligned to the business requirements or targets.There can be multiple layers of modellers but they all need to be either taking params from loaders or other modellers. output from all the methods inside modellers need to be mapped with *case classes* in **ModellerSchema**.
+
+**ModellerSchema** in **PROMPT** consists of multiple *case classs* that will define and bound with input and output data.
 
 
 
