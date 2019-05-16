@@ -1,4 +1,4 @@
-# [PROMPT Framework - The Highly efficent and modular Spark Data Engineering Framework](https://github.com/abhishekvermax/promptscalaspark-framework)
+# PROMPT Framework - The Highly efficent and modular Spark Data Engineering Framework
 
 <a href="" target="_blank"><img align="right" width="411" height="241" src="https://github.com/abhishekvermax/promptscalaspark-framework/blob/master/PROMPT_logo.png"></a>
 
