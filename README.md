@@ -8,7 +8,7 @@
 <details>
 <summary>Click to expand</summary>
 
-- [Motivation Behind Development](#Motivation)
+- [Motivation Behind Development](#motivation-behind-development)
   * [1. Why PROMPT!](#Why-PROMPT)
   * [2. How it is diffrent from other Frameworks](#2-How-it-is-diffrent-from-other-Frameworks)
 - [Overcome Hurdles with PROMPT](#Overcome-Hurdles-with-PROMPT)
