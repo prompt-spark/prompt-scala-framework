@@ -11,10 +11,11 @@
 - [Hurdles To Overcome with PROMPT](#Overcome-Hurdles-with-PROMPT)
   * [1.Functional Hurdles!](#functional-Hurdles!)
   * [2.Technical Hurdles!](#technical-hurdles!)
-- [Framework In Details](#Framework-In-Details)
-  * [4. PROMPT mind map diagram](#PROMPT-mind-map-diagram)
-  * [5. PROMPT interaction with Spark](#PROMPT-interaction-with-Spark)
-  * [6. PROMPT Scala Strategy](#PROMPT-Scala-Strategy)
+- [PROMPT In Action](#Framework-In-Details)
+  * [1. Modules In Details](#PROMPT-mind-map-diagram)
+  * [2. PROMPT mind map diagram](#PROMPT-mind-map-diagram)
+  * [2. PROMPT interaction with Spark](#PROMPT-interaction-with-Spark)
+  * [3. PROMPT Scala Strategy](#PROMPT-Scala-Strategy)
 - [Prompt Example Projects](#Prompt-Example-Projects)
 - [PROMPT sbt build](#PROMPT-sbt-build)
 - [PROMPT SCALA G8 Template](#PROMPT-SCALA-G8-Template)
@@ -58,7 +59,7 @@ Providing the capability to debug at any level of data flow from reading, transf
 
 ##  [Framework In Details]()
 
-PROMPT consists of below modules:
+**PROMPT** consists of below modules:
 
     └── com
 	└── promptscalaspark
@@ -91,4 +92,15 @@ PROMPT consists of below modules:
 	        │
 	        └── visualiser
 	            └── preVisualiserProcessor.scala
+
+### 1. Modules In Details
+
+#### a. io - Input/Output
+
+##### a.1 Loader
+Loader in PROMPT reads data in SPARK Data Structres like RDD or Datasets, now it can behave diffrentls in case of varinput data but the output of loader should be bounded with some *case class* structure.
+
+
+
+
 ---
