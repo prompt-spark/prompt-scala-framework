@@ -9,8 +9,8 @@
   * [1. Why PROMPT!](#Why-PROMPT)
   * [2. How it is diffrent from other Frameworks](#2-How-it-is-diffrent-from-other-Frameworks)
 - [Hurdles To Overcome with PROMPT](#Overcome-Hurdles-with-PROMPT)
-  * [1.Technical Hurdles!](#Technical-Hurdles!)
-  * [2.Functional Hurdles!](#Functional-Hurdles!)
+  * [1.Functional Hurdles!](#functional-Hurdles!)
+  * [2.Technical Hurdles!](#technical-hurdles!)
 - [Framework In Details](#Framework-In-Details)
   * [4. PROMPT mind map diagram](#PROMPT-mind-map-diagram)
   * [5. PROMPT interaction with Spark](#PROMPT-interaction-with-Spark)
@@ -38,8 +38,24 @@ parallely as much as possible
 
 Currently, there is no frame work that works closely to SPARK and still provides ability to achieve large vision goals like designing a whole financial system or pipeline for aviation data flow pipeline.
 
-## [Hurdles To Overcome with PROMPT]
+## [Hurdles To Overcome with PROMPT]()
+
+The Prompt Framework combines productivity and performance, making it an easy to build, scalable, type-safe Spark data engineering application with Scala, specially when it comes to develop production pipeline. Prompt is functional as well as developer-friendly,providing modular level of transformation steps in the whole data flow pipeline. With Prompt, Spark can scale predictably due to an abstracted and non-blocking architecture. By being as static at functional level and more modular at development level.
+
+### 1.  Functional Smoothness!
+
+Only thing that make any data flow pipeline work great is the answer oriented thinking means what is the final goal, that what PROMPT will make happen in the world of big data where its always easy to flow with the complexity of system, interfaces, data size, velocity and lastly goal.
+
+    1. PROMPT provides data modelling concept back in the world of Big Data.
+    2. Dont care about the setup of pipeline code.
+    3. Helper API's to make things generic.
+
+### 2.  Technical Smoothness
+
+Providing the capability to debug at any level of data flow from reading, transforming , processing till visualization of data.
 
 
+
+##[Framework In Details]()
 
 ---
