@@ -119,6 +119,7 @@ Is the object where all the transformation would be present aligned to the busin
 **ModellerSchema** in **PROMPT** consists of multiple *case classs* that will define and bound with input and output data.
 
 
+<a href="" target="_blank"><img align="center" width="600" height="500" src="https://github.com/abhishekvermax/promptscalaspark-framework/blob/master/PROMPT_mind_map.jpg"></a>
 
 
 ---
