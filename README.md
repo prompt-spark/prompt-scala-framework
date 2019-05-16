@@ -5,7 +5,7 @@
 ## Status
 
 
-The Prompt Framework combines productivity and performance making it easy to build scalable type safe spark data engineering applications with Scala specially when it comes to develop production pipeline.  Prompt is functional as well as developers friendly with providing modular level of transformation steps in whole data flow pipeline.  With Prompt, spark can scale predictably due to a abstracted and non-blocking architecture.  By being as static at functional level and more modular at development layer.
+The Prompt Framework combines productivity and performance, making it an easy to build, scalable, type-safe Spark data engineering application with Scala, specially when it comes to develop production pipeline. Prompt is functional as well as developer-friendly, providing modular level of transformation steps in the whole data flow pipeline. With Prompt, Spark can scale predictably due to an abstracted and non-blocking architecture. By being as static at functional level and more modular at development level.
 
 <img src="https://github.com/abhishekvermax/promptscalaspark-framework/blob/master/prompt_logo.png" title="Prompt Logo" alt="Prompt Logo" height=350 width=800 />
 
