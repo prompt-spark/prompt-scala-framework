@@ -1,4 +1,4 @@
-# # PROMPT Framework - The Highly efficent and modular Spark Data Engineering Framework
+# PROMPT Framework - The Highly efficent and modular Spark Data Engineering Framework
 
 [![Build Status](https://secure.travis-ci.org/twitter/finatra.png?branch=develop)](https://travis-ci.org/abhishekvermax/promptscalaspark-framework.svg?branch=master)
 
