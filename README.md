@@ -28,7 +28,7 @@
 </details>
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-## [Motivation Behind Development](#Motivation)
+## [Motivation Behind Development](#motivation-behind-development)
 
 ### 1. Why PROMPT!
 
