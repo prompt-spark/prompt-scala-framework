@@ -4,9 +4,6 @@
 
 
 ## Table of Contents
-<!-- ⛔️ AUTO-GENERATED-CONTENT:START (TOC:collapse=true&collapseText=Click to expand) -->
-<details>
-<summary>Click to expand</summary>
 
 - [Motivation Behind Development](#motivation-behind-development)
   * [1. Why PROMPT!](#Why-PROMPT)
@@ -25,8 +22,7 @@
 - [PROMPT SCALA Release Template](#PROMPT-SCALA-Release-Template)
 - [PROMPT SCALA Contribution Invited](#PROMPT-SCALA-Contribution-Invited)
 
-</details>
-<!-- AUTO-GENERATED-CONTENT:END -->
+
 
 ## [Motivation Behind Development](#motivation-behind-development)
 
