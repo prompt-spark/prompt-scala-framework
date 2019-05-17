@@ -1,6 +1,6 @@
 # PROMPT Framework - The Highly efficent and modular Spark Data Engineering Framework
 
-<img align="right" width="411" height="241" src="https://github.com/abhishekvermax/promptscalaspark-framework/blob/master/PROMPT_logo.png">
+<img align="right" width="411" height="241" src="./PROMPT_logo.png">
 
 
 ## Table of Contents
