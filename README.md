@@ -132,15 +132,20 @@ Below mind map diagram shows PROMPT preserves the type safety of scala and still
 
 <img align="center" width="600" height="500" src="https://github.com/abhishekvermax/promptscalaspark-framework/blob/master/PROMPT_mind_map.jpg">
 
+##  [3. PROMPT Scala Strategy](#PROMPT-Scala-Strategy)
 
- 
+                               main
                                 ▲
-                                |
-              +-----------------+-----------------+
+                      +---functionalModel--+
+ 		      |		           |
+          ModellerFile12Cache         ModellerFile23Cache
+                      |         |	   |
+              +-------+---------+----------+------+
               |                 |                 |
        LoaderFile1Cache  LoaderFile2Cache  LoaderFile3Cache
               |                 |                 |
               |                 |                 |
-            file1             file2   		file3
+            file1             file2   	       file3
+
 
 ---
