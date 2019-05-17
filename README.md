@@ -164,6 +164,6 @@ Below is the diagram of handling files as buffer by creating cache at off-heap m
 
 Multi-Singelton Object Explation, as a part of **PROMPT**, modeller will never connects from loader as its already in JVM off-heap memory.
 
-<img align="center" width="700" height="400" src="https://github.com/abhishekvermax/promptscalaspark-framework/blob/master/heap%memory_multi_singelton_object.png">
+<img align="center" width="700" height="400" src="https://github.com/abhishekvermax/promptscalaspark-framework/blob/master/heap%20memory_multi_singelton_object.png">
 
 ---
