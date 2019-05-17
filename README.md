@@ -156,6 +156,7 @@ That makes more sense when you do some spark job and every other transformation,
 
 By this modular approach we will be able to crunch lots of data at minute level as a part of functionality.
 
+As every stage Spark creates new instance of serialized objects because of Java serialization. when a class instance is serialized, on deserialization a new object was created every time. The same made on singleton (Scala's object) shown the opposing - even if it's read 10 times, always the same object is created.
 
 
 ---
