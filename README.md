@@ -134,10 +134,16 @@ Below mind map diagram shows PROMPT preserves the type safety of scala and still
 
 ##  [3. PROMPT Scala Strategy](#PROMPT-Scala-Strategy)
 
+Whole frame is based on the unique ness of scala **Singleton Objects**,as mentioned on SCALA.org 
+Methods and values that aren’t associated with individual instances of a class belong in singleton objects, denoted by using the keyword object instead of class. So once singelton objects are cached they can be used till the params like loading path or other requirements changed.
+
+That makes more sense when you do some spark job and every other transformation, layer is doing the same stuff again and again.
+
+
                                main
                                 ▲
-                    +---functionalModel--+
- 		      |		           |
+                      +---functionalModel--+
+ 		              |		               |
           ModellerFile12Cache         ModellerFile23Cache
                       |         |	       |
               +-------+---------+----------+------+
@@ -146,6 +152,10 @@ Below mind map diagram shows PROMPT preserves the type safety of scala and still
               |                 |                 |
               |                 |                 |
             file1             file2   	       file3
+
+
+By this modular approach we will be able to crunch lots of data at minute level as a part of functionality.
+
 
 
 ---
