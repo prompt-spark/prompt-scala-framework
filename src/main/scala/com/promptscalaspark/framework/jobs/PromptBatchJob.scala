@@ -21,10 +21,10 @@
 
 package com.promptscalaspark.framework.jobs
 
-import com.promptscalaspark.framework.api.ModelProcessor12
+import com.promptscalaspark.framework.functionalModel.FunctionalModeller12
 import org.apache.spark.{SparkConf, SparkContext}
 
-object PromptBatchJob extends ModelProcessor12 {
+object PromptBatchJob extends FunctionalModeller12 {
 
   private val APP_NAME = getClass.getSimpleName
   private val INPUT_PATH = "input_path"

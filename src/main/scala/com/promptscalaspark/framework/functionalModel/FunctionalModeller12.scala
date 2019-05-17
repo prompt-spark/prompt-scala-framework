@@ -1,8 +1,8 @@
-package com.promptscalaspark.framework.api
+package com.promptscalaspark.framework.functionalModel
 
 import com.promptscalaspark.framework.modeller.SampleModeller1
 
-trait ModelProcessor12 {
+trait FunctionalModeller12 {
 
   def dummyModelProcessor1(path: String): Unit = {}
 

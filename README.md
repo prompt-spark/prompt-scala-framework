@@ -142,7 +142,7 @@ That makes more sense when you do some spark job and every other transformation,
 
                                main
                                 ▲
-                      +---functionalModel--+
+                  +---functionalModel--+
  		      |		           |
           ModellerFile12Cache         ModellerFile23Cache
                       |         |	       |

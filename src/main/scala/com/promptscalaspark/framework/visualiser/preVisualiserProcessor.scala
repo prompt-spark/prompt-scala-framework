@@ -1,6 +1,6 @@
 package com.promptscalaspark.framework.visualiser
 
-import com.promptscalaspark.framework.api.ModelProcessor12
+import com.promptscalaspark.framework.functionalModel.FunctionalModeller12
 
 /*
  * Copyright © 2019 Abhishek Verma (abhishekv3007@gmail.com)
@@ -23,7 +23,7 @@ import com.promptscalaspark.framework.api.ModelProcessor12
  * software for all its users.
  */
 
-trait preVisualiserProcessor extends ModelProcessor12{
+trait preVisualiserProcessor extends FunctionalModeller12{
 
   def someFinalProcessing()={}
 
