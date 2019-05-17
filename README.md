@@ -6,22 +6,22 @@
 ## Table of Contents
 
 - [Motivation Behind Development](#motivation-behind-development)
-  * [1. Why PROMPT!](#Why-PROMPT)
-  * [2. How it is diffrent from other Frameworks](#2-How-it-is-diffrent-from-other-Frameworks)
-- [Hurdles To Overcome with PROMPT](#Overcome-Hurdles-with-PROMPT)
-  * [1.Functional Hurdles!](#functional-Hurdles!)
-  * [2.Technical Hurdles!](#technical-hurdles!)
-- [PROMPT In Action](#Framework-In-Details)
-  * [1. Modules In Details](#PROMPT-mind-map-diagram)
-  * [2. PROMPT mind map diagram](#PROMPT-mind-map-diagram)
-  * [3. PROMPT Scala Strategy](#PROMPT-Scala-Strategy)
-  * [4. PROMPT interaction with Spark](#PROMPT-interaction-with-Spark)
-- [Prompt Example Projects](#Prompt-Example-Projects)
-- [PROMPT sbt build](#PROMPT-sbt-build)
-- [PROMPT SCALA G8 Template](#PROMPT-SCALA-G8-Template)
-- [PROMPT SCALA Issue Template](#PROMPT-SCALA-Issue-Template)
-- [PROMPT SCALA Release Template](#PROMPT-SCALA-Release-Template)
-- [PROMPT SCALA Contribution Invited](#PROMPT-SCALA-Contribution-Invited)
+  * [1. Why PROMPT!](#why-PROMPT)
+  * [2. How it is diffrent from other Frameworks](#2-how-it-is-diffrent-from-other-frameworks)
+- [Hurdles To Overcome with PROMPT](#overcome-hurdles-with-prompt)
+  * [1.Functional Hurdles!](#functional-hurdles)
+  * [2.Technical Hurdles!](#technical-hurdles)
+- [PROMPT In Action](#framework-in-details)
+  * [1. Modules In Details](#prompt-mind-map-diagram)
+  * [2. PROMPT mind map diagram](#prompt-mind-map-diagram)
+  * [3. PROMPT Scala Strategy](#prompt-Scala-Strategy)
+  * [4. PROMPT interaction with Spark](#prompt-interaction-with-spark)
+- [Prompt Example Projects](#prompt-example-projects)
+- [PROMPT sbt build](#prompt-sbt-build)
+- [PROMPT SCALA G8 Template](#prompt-scala-G8-Template)
+- [PROMPT SCALA Issue Template](#prompt-scala-issue-template)
+- [PROMPT SCALA Release Template](#prompt-scala-realease-template)
+- [PROMPT SCALA Contribution Invited](#prompt-scala-contribution-invited)
 
 
 
@@ -30,12 +30,12 @@
 Building new Spark Data engineering ETL/ELT pipeline from scratch is really hard and sometimes a bit deviating from final goal. 
 Keeping hard eye on spark daily production implementation and hurdles leads to PROMPT. So need some framework that make things much eaiser when it comes to implimenting Big Data Engineering projects.
 
-### 1. Why PROMPT ?
+### [1. Why PROMPT ?](#why-PROMPT)
 
 Prompt is a modular framework for building fast, testable, scala spark application on top of any structured and structured data. Prompt provides an easy-to-use API for reading and writing data 
 parallely as much as possible
 
-### 2. How it is diffrent from other Frameworks ?
+### [2. How it is diffrent from other Frameworks](#2-how-it-is-diffrent-from-other-frameworks)
 
 Currently, there is no frame work that works closely to SPARK and still provides ability to achieve large vision goals like designing a whole financial system or pipeline for aviation data flow pipeline.
 
