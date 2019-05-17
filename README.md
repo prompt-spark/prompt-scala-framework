@@ -61,40 +61,40 @@ Providing the capability to debug at any level of data flow from reading, transf
 
 **PROMPT** consists of below modules:
 
-    └── com
-	└── promptscalaspark
-	    └── framework
-	        ├── api
-	        │   ├── LoaderHelper.scala
-	        │   ├── ModellerHelper.scala
-	        │
-	        ├── io
-	        │   ├── ioSchema
-	        │   │   └── InputSchema.scala
-	        │   │
-	        │   ├── loader
-	        │   │   └── DummyInputFileData1Loader.scala
-	        │   │
-	        │   └── writer
-	        │       └── DSWriter.scala
-	        │
-	        ├── jobs
-	        │   └── PromptBatchJob.scala
-	        │
-	        ├── modeller
-	        │   ├── ModellerSchema
-	        │   │   ├── Sample1ModellerSchema.scala
-	        │   │   └── Sample2ModellerSchema.scala
-	        │   │
-	        │   ├── SampleModeller1.scala
-	        │   └── SampleModeller2.scala
-	        │
-		├── functionalModel
-	        │   └── functionalModellerl2.scala
-		|
-		|
-	        └── visualiser
-	            └── preVisualiserProcessor.scala
+    ── com
+       └── promptscalaspark
+           └── framework
+               ├── api
+               │   ├── LoaderHelper.scala
+               │   └── ModellerHelper.scala
+               │
+               ├── functionalModel
+               │   └── FunctionalModeller12.scala
+               │
+               ├── io
+               │   ├── ioSchema
+               │   │   └── InputSchema.scala
+               │   │
+               │   ├── loader
+               │   │   └── DummyInputFileData1Loader.scala
+               │   │
+               │   └── writer
+               │       └── DSWriter.scala
+               │
+               ├── jobs
+               │   └── PromptBatchJob.scala
+               │
+               ├── modeller
+               │   ├── ModellerSchema
+               │   │   ├── Sample1ModellerSchema.scala
+               │   │   └── Sample2ModellerSchema.scala
+               │   │
+               │   ├── SampleModeller1.scala
+               │   └── SampleModeller2.scala
+               │
+               └── visualiser
+                   └── preVisualiserProcessor.scala
+
 
 ### 1. Modules In Details
 
