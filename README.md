@@ -132,7 +132,7 @@ Below mind map diagram shows PROMPT preserves the type safety of scala and still
 
 <img align="center" width="600" height="500" src="https://github.com/abhishekvermax/promptscalaspark-framework/blob/master/PROMPT_mind_map.jpg">
 
-##  [3. PROMPT Scala Strategy](#PROMPT-Scala-Strategy)
+##  [4. PROMPT interaction with Spark]()
 
 Whole frame is based on the unique ness of scala **Singleton Objects**,as mentioned on SCALA.org 
 Methods and values that aren’t associated with individual instances of a class belong in singleton objects, denoted by using the keyword object instead of class. So once singelton objects are cached they can be used till the params like loading path or other requirements changed.
@@ -169,7 +169,7 @@ Multi-Singelton Object Explation, as a part of **PROMPT**, modeller will never c
 
 Spark process that runs on either cluster or local is a JVM process. For any JVM process, configuration of heap size is done by -Xmx or -Xms flags.
 
-##  [3. PROMPT Spark Strategy](#PROMPT-Spark-Strategy)
+##  [3. PROMPT Spark Strategy]()
 
 By default, Spark starts with 512MB JVM heap. spark.storage.safetyFraction parameter of Spark enables usage of 90% of heap memory to by pass Out of memory error. Spark is not really in-memory tool, it just utilizes the memory for its [Least Recently Used cache](https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU).
 
@@ -184,7 +184,7 @@ To by pass that PROMPT provides the singleton objects where every method that ex
 
 	Just download or clone the frame work repository and open build.sbt in any IDE like intellij
 
-## [PROMPT SCALA G8 Template (Beta: Released Soon)](#PROMPT-SCALA-G8-Template)
+## [PROMPT SCALA G8 Template (Beta: Released Soon)]()
 
 ## [PROMPT SCALA Issue Template](#PROMPT-SCALA-Issue-Template)
 ## [PROMPT SCALA Release Template](#PROMPT-SCALA-Release-Template)
