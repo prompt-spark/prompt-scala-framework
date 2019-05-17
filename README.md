@@ -139,7 +139,7 @@ Below mind map diagram shows PROMPT preserves the type safety of scala and still
                   +---functionalModel--+
  		      |		           |
           ModellerFile12Cache         ModellerFile23Cache
-                      |         |	   |
+                      |         |	       |
               +-------+---------+----------+------+
               |                 |                 |
        LoaderFile1Cache  LoaderFile2Cache  LoaderFile3Cache
