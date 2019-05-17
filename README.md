@@ -143,7 +143,7 @@ That makes more sense when you do some spark job and every other transformation,
                                main
                                 ▲
                       +---functionalModel--+
- 		              |		               |
+ 		      |		           |
           ModellerFile12Cache         ModellerFile23Cache
                       |         |	       |
               +-------+---------+----------+------+
@@ -165,5 +165,17 @@ Below is the diagram of handling files as buffer by creating cache at off-heap m
 Multi-Singelton Object Explation, as a part of **PROMPT**, modeller will never connects from loader as its already in JVM off-heap memory.
 
 <img align="center" width="900" height="400" src="https://github.com/abhishekvermax/promptscalaspark-framework/blob/master/heap%20memory_multi_singelton_object.png">
+
+
+Spark process that runs on either cluster or local is a JVM process. For any JVM process, configuration of heap size is done by -Xmx or -Xms flags.
+
+##  [3. PROMPT Spark Strategy](#PROMPT-Spark-Strategy)
+
+By default, Spark starts with 512MB JVM heap. spark.storage.safetyFraction parameter of Spark enables usage of 90% of heap memory to by pass Out of memory error. Spark is not really in-memory tool, it just utilizes the memory for its [Least Recently Used cache](https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU).
+
+Then there is another parameter called as spark.storage.memoryFraction that controlls the processing over 60% of safe heap and then there is *spark.shuffle.memoryFraction*,that
+manages suffle memory. If shuffles exceeds the safety memory it crashed or driver OOM error is catched.
+
+To by pass that PROMPT provides the singleton objects where every method that explicity implements a transformations and can be used at various places in multiple context is used statically.
 
 ---
