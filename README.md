@@ -1,6 +1,6 @@
 # PROMPT Framework - The Highly efficent and modular Spark Data Engineering Framework
 
-<a href="" target="_blank"><img align="right" width="411" height="241" src="https://github.com/abhishekvermax/promptscalaspark-framework/blob/master/PROMPT_logo.png"></a>
+<img align="right" width="411" height="241" src="https://github.com/abhishekvermax/promptscalaspark-framework/blob/master/PROMPT_logo.png">
 
 
 ## Table of Contents
@@ -14,8 +14,8 @@
 - [PROMPT In Action](#Framework-In-Details)
   * [1. Modules In Details](#PROMPT-mind-map-diagram)
   * [2. PROMPT mind map diagram](#PROMPT-mind-map-diagram)
-  * [2. PROMPT interaction with Spark](#PROMPT-interaction-with-Spark)
   * [3. PROMPT Scala Strategy](#PROMPT-Scala-Strategy)
+  * [4. PROMPT interaction with Spark](#PROMPT-interaction-with-Spark)
 - [Prompt Example Projects](#Prompt-Example-Projects)
 - [PROMPT sbt build](#PROMPT-sbt-build)
 - [PROMPT SCALA G8 Template](#PROMPT-SCALA-G8-Template)
@@ -126,10 +126,21 @@ This is wrapper covering all the models in side and provides the functional laye
 
 Here the application starts to execute and it mainly resides over **functionalModel**, so the control over specific execution flows from start to end of the pipeline.
 
- ## [PROMPT mind map diagram]
+ ## [PROMPT mind map diagram]()
 
 Below mind map diagram shows PROMPT preserves the type safety of scala and still provides the ability to move around the pipeline to do multi-level transformation at great ease.
 
-<a href="" target="_blank"><img align="center" width="600" height="500" src="https://github.com/abhishekvermax/promptscalaspark-framework/blob/master/PROMPT_mind_map.jpg"></a>
+<img align="center" width="600" height="500" src="https://github.com/abhishekvermax/promptscalaspark-framework/blob/master/PROMPT_mind_map.jpg">
+
+
+ 
+                                ▲
+                                |
+              +-----------------+-----------------+
+              |                 |                 |
+       LoaderFile1Cache  LoaderFile2Cache  LoaderFile3Cache
+              |                 |                 |
+              |                 |                 |
+            file1             file2   		file3
 
 ---
