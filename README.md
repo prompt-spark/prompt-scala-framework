@@ -178,4 +178,17 @@ manages suffle memory. If shuffles exceeds the safety memory it crashed or drive
 
 To by pass that PROMPT provides the singleton objects where every method that explicity implements a transformations and can be used at various places in multiple context is used statically.
 
+##  [PROMPT In Action Example Projects (Beta: Released Soon)]()
+
+## [PROMPT sbt build](#PROMPT-sbt-build)
+
+	Just download or clone the frame work repository and open build.sbt in any IDE like intellij
+
+## [PROMPT SCALA G8 Template (Beta: Released Soon)](#PROMPT-SCALA-G8-Template)
+
+## [PROMPT SCALA Issue Template](#PROMPT-SCALA-Issue-Template)
+## [PROMPT SCALA Release Template](#PROMPT-SCALA-Release-Template)
+## [PROMPT SCALA Contribution Invited](#PROMPT-SCALA-Contribution-Invited)
+
+
 ---
