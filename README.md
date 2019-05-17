@@ -6,7 +6,7 @@
 ## Table of Contents
 
 - [Motivation Behind Development](#motivation-behind-development)
-  * [1. Why PROMPT!](#why-PROMPT)
+  * [1. Why PROMPT!](#why-prompt-)
   * [2. How it is diffrent from other Frameworks](#2-how-it-is-diffrent-from-other-frameworks)
 - [Hurdles To Overcome with PROMPT](#overcome-hurdles-with-prompt)
   * [1.Functional Hurdles!](#functional-hurdles)
