@@ -130,7 +130,7 @@ Here the application starts to execute and it mainly resides over **functionalMo
 
 Below mind map diagram shows PROMPT preserves the type safety of scala and still provides the ability to move around the pipeline to do multi-level transformation at great ease.
 
-<img align="center" width="600" height="500" src="https://github.com/abhishekvermax/promptscalaspark-framework/blob/master/PROMPT_mind_map.jpg">
+<img align="center" width="600" height="500" src="https://github.com/prompt-spark/promptscalaspark-framework/blob/master/PROMPT_mind_map.jpg?raw=true">
 
 ##  [4. PROMPT interaction with Spark]()
 
