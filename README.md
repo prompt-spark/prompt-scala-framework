@@ -1,6 +1,6 @@
 # PROMPT Framework - The Highly Efficent and Modular Spark Data Engineering Framework
 
-<img align="right" width="411" height="241" src="https://github.com/prompt-spark/promptscalaspark-framework/blob/master/PROMPT_logo.png?raw=true">
+<img align="right" width="411" height="241" src="https://github.com/prompt-spark/prompt-scala-framework/blob/master/project/assets/PROMPT_logo.png?raw=true">
 
 
 ## Table of Contents
@@ -130,7 +130,7 @@ Here the application starts to execute and it mainly resides over **functionalMo
 
 Below mind map diagram shows PROMPT preserves the type safety of scala and still provides the ability to move around the pipeline to do multi-level transformation at great ease.
 
-<img align="center" width="600" height="500" src="https://github.com/prompt-spark/promptscalaspark-framework/blob/master/PROMPT_mind_map.jpg?raw=true">
+<img align="center" width="600" height="500" src="https://github.com/prompt-spark/promptscalaspark-framework/blob/master/project/assets/PROMPT_mind_map.jpg?raw=true">
 
 ##  [4. PROMPT interaction with Spark]()
 
@@ -160,11 +160,11 @@ As every stage Spark creates new instance of serialized objects because of Java 
 
 Below is the diagram of handling files as buffer by creating cache at off-heap memory.
 
-<img align="center" width="700" height="400" src="https://github.com/prompt-spark/promptscalaspark-framework/blob/master/heapMemory_multi_singelton_object.png?raw=true">
+<img align="center" width="700" height="400" src="https://github.com/prompt-spark/promptscalaspark-framework/blob/master/project/assets/heapMemory_multi_singelton_object.png?raw=true">
 
 Multi-Singelton Object Explation, as a part of **PROMPT**, modeller will never connects from loader as its already in JVM off-heap memory.
 
-<img align="center" width="900" height="400" src="https://github.com/prompt-spark/promptscalaspark-framework/blob/master/heapMemory_multi_singelton_object.png?raw=true">
+<img align="center" width="900" height="400" src="https://github.com/prompt-spark/promptscalaspark-framework/blob/master/project/assets/heapMemory_multi_singelton_object.png?raw=true">
 
 
 Spark process that runs on either cluster or local is a JVM process. For any JVM process, configuration of heap size is done by -Xmx or -Xms flags.
