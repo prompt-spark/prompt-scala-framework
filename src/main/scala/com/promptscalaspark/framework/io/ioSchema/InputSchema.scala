@@ -21,11 +21,11 @@
 
 package com.promptscalaspark.framework.io.ioSchema
 
+/**
+  * this object defines multiple schema on which loaders will be bounded
+  */
 object InputSchema {
 
-  case class DummyInputFileData1(Id: Long,
-                                 Name: String,
-                                 Date: String)
-
+  case class DummyInputFileData1(Id: Long, Name: String, Date: String)
 
 }

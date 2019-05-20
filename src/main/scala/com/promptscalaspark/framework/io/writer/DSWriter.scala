@@ -23,22 +23,34 @@ package com.promptscalaspark.framework.io.writer
 
 import org.apache.spark.sql.Dataset
 
-object DSWriter
-  extends Serializable {
+/**
+  * This object will provide writer implementation for Datasets
+  */
+object DSWriter {
 
-  def writeJson[T <: Product](data: Dataset[T], outputPath : String): Unit ={
+  /**
+    * This method will provide writer to write Datasets as JSON
+    */
+  def writeJson[T <: Product](data: Dataset[T], outputPath: String): Unit = {
     data.write.mode("overwrite").option("header", "true").json(outputPath)
   }
 
-  def parrallelWriter[T <: Product](data: Seq[Dataset[T]], outputPath : String, writerType:String): Unit =
-    data.foreach {
-      case dataset if writerType=="parquet" => writeJson(dataset, outputPath)
-      case dataset if writerType=="json" => writeParquet(dataset, outputPath)
-    }
-
-
-  def writeParquet[T <: Product](data: Dataset[T], outputPath : String): Unit ={
+  /**
+    * This method will provide writer to write Dataset as PARQUET
+    */
+  def writeParquet[T <: Product](data: Dataset[T], outputPath: String): Unit = {
     data.write.mode("overwrite").option("header", "true").parquet(outputPath)
   }
+
+  /**
+    * This method will provide writer to write Dataset in parallel
+    */
+  def parallelWriter[T <: Product](data: Seq[Dataset[T]],
+                                   outputPath: String,
+                                   writerType: String): Unit =
+    data.foreach {
+      case dataset if writerType == "parquet" => writeJson(dataset, outputPath)
+      case dataset if writerType == "json"    => writeParquet(dataset, outputPath)
+    }
 
 }

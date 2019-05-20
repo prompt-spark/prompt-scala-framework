@@ -20,6 +20,10 @@ package com.promptscalaspark.framework.functionalModel
  * share and change all versions of a program--to make sure it remains free
  * software for all its users.
  */
-object FunctionalModelSchema {
 
+/**
+  * this object defines multiple schema on which FunctionalModeller's methods will be bounded
+  */
+object FunctionalModelSchema extends Serializable {
+case class FunctionalModeldata()
 }

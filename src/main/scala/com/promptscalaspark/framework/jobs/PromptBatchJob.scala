@@ -71,7 +71,7 @@ object PromptBatchJob extends FunctionalModeller12 {
   }
 
   def batchRunner(inputPath: String, outputPath: String): Unit = {
-    dummyModelProcessor2(inputPath, outputPath)
+    dummyFunctionalModel(inputPath)
   }
 
   private def sparkContext(appName: String, isLocal: Boolean): SparkContext = {

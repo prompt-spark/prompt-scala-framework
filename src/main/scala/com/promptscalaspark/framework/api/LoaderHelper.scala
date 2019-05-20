@@ -24,8 +24,16 @@ package com.promptscalaspark.framework.api
 import org.apache.spark.sql.Column
 import org.apache.spark.sql.functions._
 
+/**
+  * this object provide multiple methods to handle loading
+  * of Spark Dataset or RDD with ease
+  */
 object LoaderHelper {
 
+  /**
+    * this methods provide helkp in reading Optional Provided columns in ioSchema
+    * case classes
+    */
   def colMatcher(optionalCols: Set[String],
                  mainDFCols: Set[String]): List[Column] = {
     mainDFCols.toList.map {

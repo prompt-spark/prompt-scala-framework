@@ -25,23 +25,32 @@ import com.promptscalaspark.framework.io.ioSchema.InputSchema.DummyInputFileData
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.{Dataset, SparkSession}
 
-object DummyInputFileData1Loader {
+object DummyInputFileData1Loader extends Serializable {
 
   def loadInputFileData1DS(path: String): Dataset[DummyInputFileData1] = {
 
     val inputFileData1Path = path
 
+    /**
+      * setting SparkConf with application name and allowing multiple spark context to run
+      */
     val sparkConf = new SparkConf()
       .setAppName("prompt-spark-framework")
       .set("spark.driver.allowMultipleContexts", "true")
 
+    /**
+      * The master URL to connect to, such as "local" to run locally with one thread, "local[*]" to
+      * run locally with 4 cores, or "spark://master:7077" to run on a Spark standalone cluster.
+      */
     val spark =
       SparkSession
         .builder()
         .config(sparkConf)
-        .master("local[*]")
         .getOrCreate()
 
+    /**
+      * Load input data file in Spark Dataset and bound it with ioSchema Case class
+      */
     val inputFileDataRawDF =
       spark.read.format("").load(inputFileData1Path)
 

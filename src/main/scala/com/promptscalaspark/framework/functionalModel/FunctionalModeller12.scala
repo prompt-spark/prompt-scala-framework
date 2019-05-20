@@ -1,17 +1,24 @@
 package com.promptscalaspark.framework.functionalModel
 
-import com.promptscalaspark.framework.modeller.SampleModeller1
+import com.promptscalaspark.framework.functionalModel.FunctionalModelSchema.FunctionalModeldata
+
+/**
+  * FunctionalModel trait for  business to provide name of functional model on which whole pipeline is dependent
+  * there can be multiple traits but each trait should represent a specific functional purpose
+  * Every method inside this trait should be bound with some case class
+  */
 
 trait FunctionalModeller12 {
 
-  def dummyModelProcessor1(path: String): Unit = {}
+  /**
+    * dummyFunctionalModel, here modeller implementation would be written and bounded with
+    * case class FunctionalModeldata
+    */
 
-  def dummyModelProcessor2(inputPath: String, outputPath: String): Unit = {
-
-    val sampleModeller1: Unit = SampleModeller1.sampleTransformation3(inputPath)
-    val sampleModeller2: Unit = SampleModeller1.sampleTransformation1(inputPath)
-    val sampleModeller3: Unit = SampleModeller1.sampleTransformation2(inputPath)
+  def dummyFunctionalModel(path: String): FunctionalModeldata = {
+    FunctionalModeldata()
 
   }
+
 
 }

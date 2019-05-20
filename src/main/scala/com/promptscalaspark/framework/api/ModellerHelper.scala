@@ -23,13 +23,23 @@ package com.promptscalaspark.framework.api
 
 import scala.reflect.runtime.{universe => runTimeUniverse}
 
+/**
+  * this object provide multiple methods to handle modelling
+  * of loaded Datasets
+  */
 object ModellerHelper {
 
+  /**
+    * this method provide case class runtime symbols
+    */
   def getCaseClassType[T: runTimeUniverse.TypeTag]
     : List[runTimeUniverse.Symbol] = {
     runTimeUniverse.typeOf[T].members.toList
   }
 
+  /**
+    * this method provide case class fields in string
+    */
   def getMembers[nameCaseClass: runTimeUniverse.TypeTag]: List[String] = {
     getCaseClassType[nameCaseClass]
       .filter(!_.isMethod)
