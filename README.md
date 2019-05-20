@@ -179,8 +179,8 @@ manages suffle memory. If shuffles exceeds the safety memory it crashed or drive
 
 To by pass that PROMPT provides the singleton objects where every method that explicity implements a transformations and can be used at various places in multiple context is used statically.
 
-##  [PROMPT In Action Example Projects (Beta: Released Soon)]()
-
+##  [PROMPT In Action Example Projects (Beta)]()
+https://github.com/prompt-spark/stackexchange-spark-scala-analyser
 ## [PROMPT sbt build](#PROMPT-sbt-build)
 
 	Just download or clone the frame work repository and open build.sbt in any IDE like intellij
